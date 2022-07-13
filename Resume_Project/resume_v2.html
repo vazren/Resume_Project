@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lauren Vazquez</title>
+    <style>
+        /* All boxes */
+        body {
+            background-color: black;
+            font-size: 1.05vw;
+        }
+        div,
+        span {
+            border: 2px solid #7843BC;
+            border-radius: 10px;
+            font-family: "Rockwell";
+            padding: 5px;
+            text-align: center;
+            color: #b961bb;
+        }
+        h1 {
+            font-size: 3.3vw;
+            line-height: 50%;
+            color: #34a8cb;
+        }
+        hr {
+            border: 1px solid #7843BC;
+            width: 95%;
+        }       
+        h2 {
+            color: #34a8cb;
+            text-decoration: underline;
+            font-size: 1.5vw;
+        } 
+        /* All divs */
+        div {
+            flex: 0 1 auto;
+        }        
+        /* Outer box*/
+        .outer {
+            display: flex;
+            gap: 1%;
+            padding: 1%;
+            background-color: #0D0630;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        /* Four main boxes */
+        .top,
+        .bottom,
+        .left,
+        .right {
+            background-color: #2f195f;
+        }
+        /* Middle boxes */
+        .middle {
+            flex-direction: column;
+            flex: 2 0 auto;
+            max-width: 45%;
+            border: none;
+        }
+        .middle span {
+            display: inline-block;
+            width: 12.5vw;
+            margin: 2% .8%;
+            padding-top: 3.5%;
+            padding-bottom: 3.5%;
+            font-size: 1.2vw;
+        }
+        .middle h2 {
+            line-height: 70%;
+            font-weight: normal;
+            text-decoration: none;
+        }       
+        .top {
+            margin: -5px -5px 2% -5px;
+        }
+        .bottom {
+            margin: 0px -5px -5px -5px;
+        }
+        /* Both left and right boxes */
+        .left,
+        .right {
+            width: 50%;           
+        }
+        /* Left box */
+        .left {
+            padding-bottom: 1%;
+        }
+        h4+div {
+            width: 17vw;
+            height: .3vw;
+            margin-left: 15%;
+        }
+        .html {
+            background-image: linear-gradient(to right, #b961bb 40%, #2f195f 0%)
+        }
+        .css {
+            background-image: linear-gradient(to right, #b961bb 30%, #2f195f 0%)
+        }
+        .py {
+            background-image: linear-gradient(to right, #b961bb 20%, #2f195f 0%)
+        }
+        .left h4 {
+            margin-left: 10%;
+            line-height: 1px;
+            text-align: left;
+        }
+        /* Right box */
+        .right h2 {
+            margin-bottom: 1%;
+        }
+        .right h4 {
+            display: inline-block;
+            margin: 0 8% 0 8%;
+            font-size: 1.1vw;
+            font-weight: normal;
+            padding-bottom: 1%;
+        }
+        .right img {
+            height: 4.5vw;
+            width: 6vw;
+        }
+        figure {
+            display: flex;
+            display: inline-block;
+            flex-flow: column;
+            margin: 3% 8% 3% 8%;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+<!-- Left box contents -->
+        <div class="left">
+            <h2>Skills</h2>
+                <h4>HTML</h4>
+                    <div class="html"></div>
+                <h4>CSS</h4>
+                    <div class="css"></div>
+                <h4>Python</h4>
+                    <div class="py"></div>
+            <br>
+            <hr>
+            <!-- Make a Carosel out of these two eventually-->
+            <h2>Education</h2>
+                <p><b>University of Maryland Global Campus</b><br>Associate of Arts, General Studies<br>May 2021</p>
+                <p><b>Western Governer's University</b><br>Bachelor of Science, Software Development<br>Est. Graduation Sep 2023</p>
+            <hr>
+            <h2>Certifications</h2>
+                <p><b>CompTIA A+</b><br>Expires 12 June 2025</p>
+                <p><b>CompTIA Security+</b><br>Expires 3 February 2023</p>
+        </div>
+<!-- Middle box as a whole -->
+        <div class="middle">
+<!-- Top box contents -->
+            <div class="top">
+                <h1>Lauren Vazquez</h1>
+                <hr>
+                <h2>lauren.o.vazquez@outlook.com</h2>
+                <h2>www.linkedin.com/in/laurenovazquez</h2>
+            </div>
+<!-- Bottom box contents -->
+            <div class="bottom">
+                <p>Operations Management Specialist and with over 10 years of proven leadership experience. Skillful with critical systems in secure environments while working under significant time pressures. Adapts quickly to interruptions, equipment failures, or changing priorities with resourceful problem-solving. Able to train and supervise teams to complete projects and anticipate challenges regarding project outcomes. Excited to transition to a career in Software Development.</p>
+                <hr>
+                <b>
+                <span>Time Management</span>
+                <span>Leadership</span>
+                <span>Critical Thinking</span>
+                <span>Problem Solving</span>
+                <span>Team Building</span>
+                <span>Staff Development</span>
+                <span>Detail Oriented</span>
+                <span>Collaboration</span>
+                <span>Analytical Skills</span>
+                </b>
+            </div>
+
+        </div>
+<!-- Right box contents -->
+        <div class="right">
+            <h2>Work Experience</h2>
+                <h4>US Army</h4>
+                <h4>June 2010 - Present</h4>
+                <p><b>Fire Direction Chief</b><br>September 2021 - Present</p>
+                <p><b>Air Defense Master Evaluator</b><br>July 2019 - September 2021</p>
+                <p><b>Platoon Sergeant</b><br>November 2017 - July 2019</p>
+                <p><b>Section Leader</b><br>September 2014 - November 2017</p>
+                <p><b>Engagement Controller</b><br>August 2011 - September 2014</p>
+            <hr>
+            <h2>Hobbies</h2>
+                <figure>
+                    <img src="file:///Users/vazren/Documents/Projects/Resume_Project/Media/yarn_hook.png" alt="Crochet Hook and Yarn">
+                    <figcaption>Crochet</figcaption>
+                </figure>
+                <figure>
+                    <img src="file:///Users/vazren/Documents/Projects/Resume_Project/Media/controller.png" alt="Video Game Controller"> 
+                    <figcaption>Games</figcaption>
+                </figure>
+                <figure>
+                    <img src="file:///Users/vazren/Documents/Projects/Resume_Project/Media/computer.png" alt="Desktop Computer">
+                    <figcaption>Technology</figcaption>
+                </figure>
+                <figure>
+                    <img src="file:///Users/vazren/Documents/Projects/Resume_Project/Media/diving_mask.png" alt="SCUBA Mask">
+                    <figcaption>SCUBA</figcaption>
+                </figure>
+        </div>
+
+    </div>
+</body>
+</html>
